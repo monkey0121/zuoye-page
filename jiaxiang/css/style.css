@@ -1,0 +1,38 @@
+.box1{
+    background-color: antiquewhite;
+    color: royalblue;
+    border-top:10px yellow dotted;
+    border-bottom:10px yellow dotted;
+    margin: 0px;
+}
+.box2{
+    background-color: antiquewhite;
+    color: royalblue;
+    margin: 0px;
+}
+a:link {color:#000000;}      /* 未访问链接*/
+a:visited {color:#00FF00;}  /* 已访问链接 */
+a:hover {color:#FF00FF;}  /* 鼠标移动到链接上 */
+a:active {color:#0000FF;}  /* 鼠标点击时 */
+
+.container{
+    width: 60%;
+    margin:auto;
+}
+.img1{
+    margin:auto;
+    width: 800px;
+    height: 200px;
+}
+.static {
+    position: static;
+    border: 3px solid #73AD21;
+}
+#menu{
+
+background-color:#FFD700;color: royalblue;height:100px;width: 100px;float:left;margin: 100px;}
+
+#static{
+    position: static;
+    border: 3px solid #73AD21;
+}
