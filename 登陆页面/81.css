@@ -1,0 +1,175 @@
+*{
+    /* 初始化 */
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* 100%窗口高度 */
+    height: 100vh;
+    /* 弹性布局 水平+垂直居中 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 渐变背景 */
+    background: #d09e74;
+}
+.container{
+    background-color: #fff;
+    width: 910px;
+    height: 581px;
+    border-radius: 50px;
+    /* 阴影 */
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    /* 相对定位 */
+    position: relative;
+}
+.img-left1{
+    position: absolute;
+    left: 150px;
+    z-index: 1;
+}
+.img0{
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    right: 30px;
+}
+.img1{
+    position: absolute;
+    z-index: 2;
+    top: 300px;
+    right: 100px;
+}
+.img2{
+    position:absolute;
+    z-index: 1;
+    top: 400px;
+    right: 250px;
+}
+.form-box{
+    /* 绝对定位 */
+    margin: auto;
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    background-color: #fff;
+    width: 448px;
+    height: 700px;
+    border-radius: 50px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    /* 动画过渡 加速后减速 */
+    transition: 0.5s ease-in-out;
+}
+.register-box,.login-box{
+    /* 弹性布局 垂直排列 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.hidden{
+    display: none;
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    margin-bottom: 25px;
+    /* 大写 */
+    text-transform: uppercase;
+    color: #DBA066;
+    /* 字间距 */
+    font-size: 50PX;
+    letter-spacing: 10px;
+    top: 20px;
+}
+input{
+    background-color: transparent;
+    width: 70%;
+    color: #d09e74;
+    border: none;
+    /* 下边框样式 */
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    padding: 10px 0;
+    text-indent: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+input::placeholder{
+    color: #d09e74;
+}
+input:focus{
+    color: #d09e74;
+    outline: none;
+    border-bottom: 1px solid #d09e74;
+    transition: 0.5s;
+}
+input:focus::placeholder{
+    opacity: 0;
+}
+.form-box button{
+    width: 70%;
+    margin-top: 35px;
+    background-image: linear-gradient(to right, #eea769, #fcd086);
+    outline: none;
+    border-radius: 50px;
+    padding: 13px;
+    color: #fff;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+}
+.con-box{
+    width: 50%;
+    /* 弹性布局 垂直排列 居中 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 绝对定位 居中 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.con-box.left{
+    left: -1%;
+}
+.con-box.right{
+    right: -5%;
+}
+.con-box h2{
+    color: #8e9aaf;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 4px;
+}
+.con-box p{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #8e9aaf;
+    text-align: center;
+}
+
+
+.con-box button{
+    height: 10%;
+    margin-top: 3%;
+    background-color: #fff;
+    color: #d09e74;
+    border: 1px solid #d09e74;
+    padding: 6px 10px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    outline: none;
+    cursor: pointer;
+}
+.con-box button:hover{
+    background-color: #d09e74;
+    color: #fff;
+}
